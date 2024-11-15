@@ -145,42 +145,41 @@ footer {
     margin-top: 4rem;
 }
 
-/* Add these styles to your CSS */
+/* Updated video container styles */
 .project-video-container {
-    position: relative;
     width: 100%;
-    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-    margin: 1.5rem 0;
+    max-width: 1000px; /* Or your preferred max width */
+    margin: 1.5rem auto;
     border-radius: 0.75rem;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .project-video {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
+    height: auto;
+    display: block;
     border-radius: 0.75rem;
-    object-fit: cover;
 }
 
-/* For local video controls */
-.project-video::-webkit-media-controls {
-    background-color: rgba(0, 0, 0, 0.5);
+/* Make sure video respects original dimensions */
+video.project-video {
+    aspect-ratio: auto;
+    object-fit: contain;
 }
 
-/* Optional: Add a placeholder while video loads */
-.project-video-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #f1f5f9;
+/* For embedded iframes (YouTube) */
+iframe.project-video {
+    aspect-ratio: 16/9;
+    border: none;
 }
+
+/* Responsive adjustments
+@media (max-width: 768px) {
+    .project-video-container {
+        margin: 1rem auto;
+    }
+} */
 
 /* Responsive Design */
 @media (max-width: 1000px) {
