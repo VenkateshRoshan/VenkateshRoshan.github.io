@@ -16,7 +16,6 @@
                 <li><a href="#cv">CV</a></li>
                 <li><a href="https://github.com/VenkateshRoshan" target="_blank">GitHub</a></li>
                 <li><a href="mailto:butchivenkatesh.a@gmail.com">Mail</a></li>
-                <li><a href="+17746707192">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -24,7 +23,13 @@
     <main>
         <section id="home">
             <h1>Butchi Venkatesh Adari</h1>
-            <p>Machine Learning Engineer and researcher</p>
+            <p>A passionate and dedicated Machine Learning and MLOps professional with a strong foundation in AI, computer vision, and robotics. I hold expertise in developing, deploying, and optimizing AI models with hands-on experience in cloud platforms like AWS and Google Cloud. My work spans across various domains, including reinforcement learning, depth estimation, real-time object detection, and conversational AI systems.
+
+                I have worked on several impactful projects, including developing a real-time customer support chatbot deployed on AWS SageMaker, fine-tuning depth estimation models for robotics, and building a simulated vehicle environment for object tracking and lane detection. I am currently focused on implementing advanced AI systems for robotics, including object grasping, reinforcement learning, and AI-driven robotic agents.
+                
+                My goal is to drive innovation in the AI/ML field, leveraging modern tools and techniques to create practical solutions for real-world challenges.
+                
+                </p>
         <section id="profile">
             <h2>My Profile</h2>
             <img src="ProfilePicture.jpg" alt="Profile Picture" class="profile-picture">
@@ -33,12 +38,52 @@
 
         <section id="projects">
             <h2>My Projects</h2>
+            <!-- Add this project block within your projects section -->
+            <div class="project">
+                <h3>Enhanced Monocular Depth Estimation with Grasp Pose Prediction</h3>
+                <p>Leading a groundbreaking project in robotic vision and manipulation that combines advanced depth estimation with practical grasping capabilities. 
+                Successfully fine-tuned Apple's Depth-Pro model to achieve significant improvements in monocular depth estimation, reducing error margins from 10 cm to 3-4 cm. 
+                Developed an innovative Grasp Transformer model that leverages RGB images and monocular depth data to predict optimal grasp poses for robotic manipulation. 
+                The system is currently being validated in PyBullet simulation environment, with planned deployment on the Universal Robot UR10 platform for real-world applications.</p>
+                
+            </div>
+            <div class="project">
+                <!-- Add project Title -->
+                <h3>Research-Paper-RAG</h3>
+                <p>Developed a production-ready Research Paper Analysis System leveraging Retrieval-Augmented Generation (RAG) architecture. The system efficiently processes academic papers from the arXiv dataset, utilizing FAISS for similarity search and Flan-T5 for text generation. 
+                    Built on Google Cloud Platform, it features a FastAPI backend deployed on Vertex AI, with a user-friendly Gradio interface for real-time querying. The system employs advanced embedding techniques to understand and retrieve relevant research papers, 
+                    generating context-aware responses to user queries. Implemented with a robust CI/CD pipeline using GitHub Actions, the system includes comprehensive monitoring, automated deployments, and scalable infrastructure. The architecture ensures efficient handling of 
+                    large-scale document processing while maintaining quick response times and high accuracy in research paper analysis.</p>
+                <div class="slideshow-container">
+                    <div class="slides fade">
+                        <img src="Research-Paper-RAG/outputRAGSystem.png" alt="RAG Results" width="1000" height="600">
+                        <div class="caption">Research Paper RAG System</div>
+                    </div>
+                    
+                    <div class="slides fade">
+                        <img src="Research-Paper-RAG/Architecture.png" alt="RAG System Architecture" width="1000" height="600">
+                        <div class="caption">System Architecture</div>
+                    </div>
+                    
+                    <div class="slides fade">
+                        <img src="Research-Paper-RAG/originalOutput_flanT5.png" alt="RAG Based Model Output" width="1000" height="600">
+                        <div class="caption">Based Model Result</div>
+                    </div>
+            
+                    <!-- Navigation buttons -->
+                    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/VenkateshRoshan/Research-Paper-RAG" target="_blank">Git Repo</a>
+                </div>
+            </div>
             <div class="project">
                 <!-- Add project Title -->
                 <h3>Image Captioning with Vision Transformer and GPT 2</h3>
                 <p>This project is an image caption generator that uses a Vision Transformer (ViT) to extract visual features from images and a GPT-2 model to generate natural language descriptions. 
                     The model is deployed on both AWS and Hugging Face, allowing users to upload images and receive descriptive captions in real-time.</p>
-                <img src="output_project-1.png" alt="Project 1" class="project-image" width="1000" height="600">
+                <img src="ImageCaptionining/output_project-1.png" alt="Project 2" class="project-image" width="1000" height="600">
                 <div class="project-links">
                     <a href="https://github.com/VenkateshRoshan/Image-Captioning-with-Vision-Transformer-and-GPT-2" target="_blank">Git Repo</a>
                     <a href="https://huggingface.co/spaces/abven/ImageCaptionGenerator" target="_blank">Hugging Face Site</a>
@@ -48,7 +93,7 @@
                 <h3>Real Time Customer Support Chatbot</h3>
                 <p>🤖 Developed and deployed an enterprise-level customer support chatbot leveraging LLM technology for automated, context-aware responses. Implemented comprehensive MLOps practices with 
                     full monitoring and versioning capabilities. Containerized the solution with Docker, featuring an interactive Gradio UI for seamless model interaction and testing.</p>
-                <img src="output_project-2.png" alt="Project 2" class="project-image" width="1000" height="600">
+                <img src="CustomerChatbot/output_project-2.png" alt="Project 3" class="project-image" width="1000" height="600">
                 <div class="project-links">
                     <a href="https://github.com/VenkateshRoshan/Real-Time-Customer-Support-Chatbot" target="_blank">Git Repo</a>
                     <a href="https://huggingface.co/spaces/abven/Customer-Support-Chatbot" target="_blank">huggingface Site</a>
@@ -66,15 +111,12 @@
                         class="project-video"
                         controls
                         preload="metadata"
-                        poster="video-thumbnail.jpg"> <!-- Optional: Add a thumbnail -->
-                        <source src="AVM_Output.mp4" type="video/mp4">
+                        poster="video-thumbnail.jpg">
+                        <source src="SelfDrivingCar/AVM_Output.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
             
-                <!-- You can keep your original image as a fallback or remove it -->
-                <!-- <img src="output_project-2.png" alt="Project 3" class="project-image" width="1000" height="600"> -->
-                
                 <div class="project-links">
                     <a href="https://github.com/VenkateshRoshan/Autonomous-Vehicle-Model/tree/master" target="_blank">Git Repo</a>
                 </div>
@@ -86,5 +128,53 @@
     <footer>
         <p>&copy; 2024 Butchi Venkatesh Adari</p>
     </footer>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function changeSlide(n) {
+            showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slides");
+            let dots = document.getElementsByClassName("dot");
+            
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+        
+        // Auto-advance slides every 5 seconds
+        setInterval(() => {
+            changeSlide(1);
+        }, 5000);
+
+        // // Smooth scroll for navigation links
+        // document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        //     anchor.addEventListener('click', function (e) {
+        //         e.preventDefault();
+        //         document.querySelector(this.getAttribute('href')).scrollIntoView({
+        //             behavior: 'smooth'
+        //         });
+        //     });
+        // });
+
+    </script>
 </body>
 </html>
