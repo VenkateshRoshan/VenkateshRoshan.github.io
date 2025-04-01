@@ -54,6 +54,59 @@
                 
             </div>
             <div class="project">
+                <h3>Rufus - Intelligent Web Data Extractor for RAG Systems</h3>
+                
+                <p>🤖 Engineered a cutting-edge AI-powered web extraction system that revolutionizes how data is gathered and processed for RAG (Retrieval-Augmented Generation) applications. Rufus intelligently crawls websites based on natural language instructions, making complex data extraction as simple as writing a prompt.</p>
+                
+                <div class="project-details">
+                    <h4>Key Features</h4>
+                    <ul>
+                        <li><strong>AI-Driven Crawling:</strong> Implemented advanced crawling algorithms powered by LLMs (TinyLlama, with planned OpenAI integration) that understand and follow natural language instructions for targeted data extraction.</li>
+                        <li><strong>Smart Content Selection:</strong> Developed intelligent filtering mechanisms that identify and extract only the most relevant content, significantly reducing noise in the final dataset.</li>
+                        <li><strong>Dynamic Navigation:</strong> Built robust handling for complex web structures, including nested links and dynamically loaded content, ensuring comprehensive data collection.</li>
+                        <li><strong>Structured Output:</strong> Created sophisticated document synthesis pipelines that convert raw web content into clean, structured formats ready for RAG applications.</li>
+                    </ul>
+            
+                    <h4>Technical Implementation</h4>
+                    <ul>
+                        <li><strong>Core Architecture:</strong> Built with Python, utilizing FastAPI for REST endpoints and Gradio for an intuitive user interface. Containerized with Docker for consistent deployment across environments.</li>
+                        <li><strong>LLM Integration:</strong> Leveraged LangChain for orchestrating LLM operations, initially using Ollama-TinyLlama for development with seamless migration path to OpenAI for production.</li>
+                        <li><strong>Vector Storage:</strong> Implemented ChromaDB for efficient storage and retrieval of document embeddings, enabling fast and accurate content matching.</li>
+                        <li><strong>Modular Design:</strong> Created a highly maintainable codebase with clear separation of concerns across crawling, AI processing, and data synthesis components.</li>
+                    </ul>
+            
+                    <h4>Performance & Scalability</h4>
+                    <ul>
+                        <li><strong>Intelligent Rate Limiting:</strong> Implemented adaptive rate limiting and concurrent processing to maximize throughput while respecting website policies.</li>
+                        <li><strong>Error Resilience:</strong> Built comprehensive error handling and recovery mechanisms, ensuring reliable operation across diverse web environments.</li>
+                        <li><strong>Monitoring & Logging:</strong> Integrated detailed logging and monitoring capabilities for tracking system performance and debugging.</li>
+                    </ul>
+            
+                    <h4>Example Usage</h4>
+                    <pre><code>
+            from Rufus import RufusClient
+            
+            # Initialize client
+            client = RufusClient(api_key=YOUR_API_KEY)
+            
+            # Extract data with natural language instructions
+            documents = client.scrape(
+                url="https://example.com",
+                instructions="Find all product features and customer FAQ sections"
+            )
+            
+            # Documents are returned in structured format ready for RAG pipelines
+            print(documents)
+                    </code></pre>
+                </div>
+            
+                <img src="AIWebExtractor/output_project-4.png" alt="Rufus Project Architecture" class="project-image" width="1000" height="600">
+                
+                <div class="project-links">
+                    <a href="https://github.com/VenkateshRoshan/rufus-web-extractor" target="_blank">Git Repo</a>
+                </div>
+            </div>
+            <div class="project">
                 <!-- Add project Title -->
                 <h3>Research-Paper-RAG</h3>
                 <p>Developed a production-ready Research Paper Analysis System leveraging Retrieval-Augmented Generation (RAG) architecture. The system efficiently processes academic papers from the arXiv dataset, utilizing FAISS for similarity search and Flan-T5 for text generation. 
