@@ -47,11 +47,27 @@
             <!-- Add this project block within your projects section -->
             <div class="project">
                 <h3>Enhanced Monocular Depth Estimation with Grasp Pose Prediction</h3>
-                <p>Leading a groundbreaking project in robotic vision and manipulation that combines advanced depth estimation with practical grasping capabilities. 
-                Successfully fine-tuned Apple's Depth-Pro model to achieve significant improvements in monocular depth estimation, reducing error margins from 10 cm to 3-4 cm. 
-                Developed an innovative Grasp Transformer model that leverages RGB images and monocular depth data to predict optimal grasp poses for robotic manipulation. 
-                The system is currently being validated in PyBullet simulation environment, with planned deployment on the Universal Robot UR10 platform for real-world applications.</p>
+                <p>Successfully implemented a groundbreaking project in robotic vision and manipulation that combines advanced depth estimation with practical grasping capabilities. 
+                Fine-tuned Apple's Depth-Pro model to achieve significant improvements in monocular depth estimation, particularly excelling in scenarios where traditional depth sensors fail. 
+                When tested with the ReactorX-200 robotic arm at 30cm height, conventional depth sensors produced null values, while our enhanced monocular depth system maintained accuracy with just 1-2cm error margin.
+                Further optimized the model through quantization, achieving comparable performance with FP16 precision while maintaining minimal error rates (note: INT8 quantization showed increased error margins).
+                Developed and deployed an innovative Grasp Transformer model that leverages RGB images and monocular depth data to predict optimal grasp poses for robotic manipulation. 
+                The system has been successfully deployed on the ReactorX-200 (Trossen Robotics) platform, demonstrating robust performance in real-world grasping tasks.</p>
                 
+                <div class="project-media">
+                    <img src="Grasping/comparison.png" alt="Depth Estimation Comparison" class="project-image" width="1000" height="600">
+                    <img src="Grasping/quantization_comparison.png" alt="Quantization Comparison" class="project-image" width="1000" height="600">
+                    <div class="project-video-container">
+                        <video 
+                            class="project-video"
+                            controls
+                            preload="metadata"
+                            poster="MonocularDepth/video-thumbnail.jpg">
+                            <source src="Grasping/Grasping-rx200.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
             </div>
             <div class="project">
                 <h3>Rufus - Intelligent Web Data Extractor for RAG Systems</h3>
