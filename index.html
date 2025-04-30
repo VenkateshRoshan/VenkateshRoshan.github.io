@@ -54,20 +54,30 @@
                 Developed and deployed an innovative Grasp Transformer model that leverages RGB images and monocular depth data to predict optimal grasp poses for robotic manipulation. 
                 The system has been successfully deployed on the ReactorX-200 (Trossen Robotics) platform, demonstrating robust performance in real-world grasping tasks.</p>
                 
-                <div class="project-media">
-                    <img src="Grasping/comparison.png" alt="Depth Estimation Comparison" class="project-image" width="1000" height="600">
-                    <img src="Grasping/quantization_comparison.png" alt="Quantization Comparison" class="project-image" width="1000" height="600">
-                    <div class="project-video-container">
-                        <video 
-                            class="project-video"
-                            controls
-                            preload="metadata"
-                            poster="MonocularDepth/video-thumbnail.jpg">
-                            <source src="Grasping/Grasping-rx200.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+                <div class="slideshow-container">
+                    <div class="slides fade">
+                        <img src="Grasping/comparison.png" alt="Depth Estimation Comparison" width="1000" height="600">
+                        <div class="caption">Research Paper RAG System</div>
                     </div>
+                    
+                    <div class="slides fade">
+                        <img src="Grasping/quantization_comparison.png" alt="Quantization Comparison" width="1000" height="600">
+                        <div class="caption">System Architecture</div>
+                    </div>
+                    
+                    <div class="slides fade">
+                        <img src="Grasping/Grasping-rx200.mp4" alt="ReactorX-200 Grasping a ball" width="1000" height="600">
+                        <div class="caption">Based Model Result</div>
+                    </div>
+            
+                    <!-- Navigation buttons -->
+                    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="changeSlide(1)">&#10095;</a>
                 </div>
+                <div class="project-links">
+                    <a href="https://github.com/VenkateshRoshan/Research-Paper-RAG" target="_blank">Git Repo</a>
+                </div>
+
             </div>
             <div class="project">
                 <h3>Rufus - Intelligent Web Data Extractor for RAG Systems</h3>
