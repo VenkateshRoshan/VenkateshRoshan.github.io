@@ -52,7 +52,9 @@
                 When tested with the ReactorX-200 robotic arm at 30cm height, conventional depth sensors produced null values, while our enhanced monocular depth system maintained accuracy with just 1-2cm error margin.
                 Further optimized the model through quantization, achieving comparable performance with FP16 precision while maintaining minimal error rates (note: INT8 quantization showed increased error margins).
                 Developed and deployed an innovative Grasp Transformer model that leverages RGB images and monocular depth data to predict optimal grasp poses for robotic manipulation. 
-                The system has been successfully deployed on the ReactorX-200 (Trossen Robotics) platform, demonstrating robust performance in real-world grasping tasks.</p>
+                The system has been successfully deployed on the ReactorX-200 (Trossen Robotics) platform, demonstrating robust performance in real-world grasping tasks.
+                    There is an attached video which shows the ReactorX-200 arm successfully grasping a ball from a distance of 15cm, showcasing the practical application of our depth estimation and grasp pose prediction system.</p>
+                </p>
                 
                 <div class="slideshow-container">
                     <div class="slides fade">
@@ -65,16 +67,17 @@
                         <div class="caption">Quantization Comparison</div>
                     </div>
 
-                    <div class="project-video-container">
-                        <video 
-                            class="project-video"
-                            controls
-                            preload="metadata"
-                            poster="video-thumbnail.jpg">
-                            <source src="Grasping/Grasping-rx200.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <div class="caption">Reactor-X 200 grasping a ball under 15cm view</div>
+                    <div class="slides fade">
+                        <div class="project-video-container">
+                            <video 
+                                class="project-video"
+                                controls
+                                preload="metadata"
+                                poster="video-thumbnail.jpg">
+                                <source src="Grasping/Grasping-rx200.mp4" type="video/mp4">
+                                Reactor-X 200 grasping a ball under 15cm view.
+                            </video>
+                        </div>
                     </div>
             
                     <!-- Navigation buttons -->
