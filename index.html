@@ -227,41 +227,29 @@
 
     <script>
         let slideIndex = 1;
-        
-        // Call this function when the page loads
-        document.addEventListener('DOMContentLoaded', function() {
-            showSlides(slideIndex);
-        });
-        
+      
         function changeSlide(n) {
-            showSlides(slideIndex += n);
+          showSlides(slideIndex += n);
         }
-        
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-        
+      
         function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("slides");
-            
-            if (n > slides.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = slides.length}
-            
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            
-            // Make sure slideIndex is valid before trying to show the slide
-            if (slides.length > 0) {
-                slides[slideIndex-1].style.display = "block";
-            }
+          const slides = document.getElementsByClassName("slides");
+          if (n > slides.length) slideIndex = 1;
+          if (n < 1)          slideIndex = slides.length;
+          for (let slide of slides) {
+            slide.style.display = "none";
+          }
+          if (slides.length) {
+            slides[slideIndex - 1].style.display = "block";
+          }
         }
-        
-        // Auto-advance slides every 5 seconds
-        setInterval(() => {
-            changeSlide(1);
-        }, 5000);
-    </script>
+      
+        // **Right after your functions, show the first slide:**
+        showSlides(slideIndex);
+      
+        // Auto-advance
+        setInterval(() => changeSlide(1), 5000);
+      </script>
+      
 </body>
 </html>
