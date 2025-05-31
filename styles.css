@@ -9,13 +9,13 @@ html {
 }
 
 :root {
-    --primary-color: #2563eb;
-    --secondary-color: #1e40af;
+    --primary-color: #10b981;           /* emerald green */
+    --secondary-color: #059669;         /* darker green */
     --accent-green: #22c55e;
-    --background-color: #f8fafc;
-    --text-color: #1e293b;
-    --header-bg: #1e1e1e;
-    --card-bg: #ffffff;
+    --background-color: #000000;        /* dark navy (overall bg) */
+    --text-color: #f1f5f9;              /* light text */
+    --header-bg: #080808;               /* match background or darker */
+    --card-bg: #1e293b;                 /* dark gray for cards */
 }
 
 
@@ -38,7 +38,7 @@ body {
 header {
     background: var(--header-bg);
     padding: 1.5rem 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
 }
 
 nav ul {
@@ -228,7 +228,6 @@ h3 {
     margin-bottom: 0.5rem;
 }
 
-
 /* Education Section */
 #education {
     margin-top: 3rem;
@@ -293,6 +292,15 @@ h3 {
     box-shadow: 0 0 0 2px #2563eb;
 }
 
+.timeline-content,
+.project,
+.education-block,
+.about-me-container {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
 /* Projects Section */
 .project {
     background: var(--card-bg);
@@ -302,6 +310,7 @@ h3 {
     margin: 2rem 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s ease-in-out;
+
 }
 
 .project:hover {
@@ -520,4 +529,8 @@ iframe.project-video {
 @keyframes fade {
     from {opacity: .4} 
     to {opacity: 1}
+}
+
+* {
+    transition: background-color 0.3s, color 0.3s;
 }
