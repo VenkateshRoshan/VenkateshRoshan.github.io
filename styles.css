@@ -11,11 +11,19 @@ html {
 :root {
     --primary-color: #2563eb;
     --secondary-color: #1e40af;
+    --accent-green: #22c55e;
     --background-color: #f8fafc;
     --text-color: #1e293b;
     --header-bg: #1e1e1e;
     --card-bg: #ffffff;
 }
+
+
+section {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -60,7 +68,7 @@ nav ul li a:hover {
 /* Main Content */
 main {
     max-width: 1200px;
-    margin: 3rem auto;
+    margin: 1.5rem auto;
     padding: 0 2rem;
 }
 
@@ -68,7 +76,7 @@ h1 {
     font-size: 2.5rem;
     font-weight: 700;
     color: var(--text-color);
-    margin-bottom: 1rem;
+    margin: .01rem 0 .01rem;
     text-align: center;
 }
 
@@ -76,7 +84,7 @@ h2 {
     font-size: 2rem;
     font-weight: 600;
     color: var(--text-color);
-    margin: 2.5rem 0 1.5rem;
+    margin: .1rem 0 .1rem;
 }
 
 h3 {
@@ -97,10 +105,198 @@ h3 {
     border: 4px solid var(--card-bg);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+/* About Me */
+#about {
+    margin-top: 3rem;
+    padding: 1rem 0;
+}
+
+.about-me {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--text-color);
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.about-me-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .about-me-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-me-text {
+        margin-top: 1rem;
+    }
+}
+
+
+.profile-picture-inline {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--card-bg);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-me-text {
+    flex: 1;
+    font-size: 1.125rem;
+    color: var(--text-color);
+    line-height: 1.8;
+    min-width: 260px;
+}
+
+#experience {
+    margin-top: 3rem;
+    padding: 1rem 0;
+}
+
+.experience-logo-timeline {
+    width: 60px;
+    height: auto;
+    object-fit: contain;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.timeline {
+    position: relative;
+    margin: 2rem 0;
+    padding-left: 2rem;
+    border-left: 4px solid var(--accent-green); /* vertical line */
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+    padding-left: 1.5rem;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -0.85rem;
+    top: 0.3rem;
+    width: 1rem;
+    height: 1rem;
+    background-color: var(--accent-green);
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 0 0 2px var(--accent-green);
+}
+
+.timeline-date {
+    font-weight: 600;
+    color: #475569;
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.timeline-content {
+    background-color: var(--card-bg);
+    padding: 1.25rem 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.timeline-content h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: var(--text-color);
+}
+
+.experience-meta {
+    font-size: 0.95rem;
+    color: #64748b;
+    margin-bottom: 0.5rem;
+}
+
+
+/* Education Section */
+#education {
+    margin-top: 3rem;
+    padding: 1rem 0;
+}
+
+.education-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.edu-logo {
+    width: 60px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 600px) {
+    .edu-logo {
+        width: 40px;
+    }
+}
+
+.education-block {
+    background-color: #fff;
+    padding: 1.5rem 2rem;
+    margin-bottom: 1.5rem;
+    border-left: 6px solid var(--primary-color);
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.education-block h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.25rem;
+    color: var(--text-color);
+}
+
+.education-block .degree {
+    font-size: 1rem;
+    color: #475569;
+}
+
+.edu-logo-timeline {
+    width: 60px;
+    height: auto;
+    object-fit: contain;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.education-timeline {
+    border-left-color: #2563eb; /* blue */
+}
+
+.education-timeline .timeline-item::before {
+    background-color: #2563eb;
+    box-shadow: 0 0 0 2px #2563eb;
+}
 
 /* Projects Section */
 .project {
     background: var(--card-bg);
+    border-left: 6px solid var(--primary-color);  /* green accent - use any hex or tailwind green */
     border-radius: 1rem;
     padding: 2rem;
     margin: 2rem 0;
@@ -110,7 +306,9 @@ h3 {
 
 .project:hover {
     transform: translateY(-4px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08);
 }
+
 
 .project-image {
     width: 1000px;
