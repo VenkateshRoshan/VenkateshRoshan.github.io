@@ -453,10 +453,10 @@ iframe.project-video {
     cursor: pointer;
 }
 
-.slides:hover {
+/* .slides:hover {
     transform: scale(1.25);
     z-index: 1;
-}
+} */
 
 .slides img {
     width: 100%;
