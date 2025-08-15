@@ -310,7 +310,6 @@ h3 {
     margin: 2rem 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s ease-in-out;
-
 }
 
 .project:hover {
@@ -533,4 +532,62 @@ iframe.project-video {
 
 * {
     transition: background-color 0.3s, color 0.3s;
+}
+
+/* Tech Stack Styling */
+.tech-stack {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 15px 0;
+    flex-wrap: wrap;
+}
+
+.tech-phase {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9em;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease;
+}
+
+.tech-phase:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.tech-connector {
+    color: #666;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Company Button Styling */
+.company-button {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.learn-more-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.learn-more-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
 }
