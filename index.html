@@ -178,7 +178,41 @@
 
         <section id="projects">
             <h2>My Projects</h2>
-            <!-- Add this project block within your projects section -->
+            
+            <div class="project">
+                <h3>DriveAlign - Autonomous Driving with RLHF</h3>
+                <div class="tech-stack">
+                    <span class="tech-phase">PPO</span>
+                    <span class="tech-connector">+</span>
+                    <span class="tech-phase">RLHF</span>
+                    <span class="tech-connector">+</span>
+                    <span class="tech-phase">MetaDrive</span>
+                    <span class="tech-connector">+</span>
+                    <span class="tech-phase">PyTorch</span>
+                    <span class="tech-connector">+</span>
+                    <span class="tech-phase">CNN + MLP</span>
+                </div>
+                <p>
+                    Built a full <strong>Reinforcement Learning from Human Feedback (RLHF)</strong> pipeline for autonomous driving
+                    inside the <strong>MetaDrive</strong> simulation environment. Trained a multimodal PPO agent from scratch using
+                    a custom <strong>gated CNN + MLP architecture</strong>. The CNN branch processes live RGB camera frames while
+                    the MLP branch processes a stacked history of 4 ego-state vectors covering speed, steering angle, yaw rate,
+                    lateral offset, and boundary distances. A learned gate layer dynamically weights how much to trust vision
+                    versus scalar signals depending on the driving context.
+                </p>
+                <p>
+                    Implemented a complete 7-phase RLHF pipeline: base PPO agent, vision integration, segment recording,
+                    human feedback collection, reward model training, RLHF fine-tuning, and metrics visualization. Human
+                    preferences are collected by watching the agent drive in real time and scoring each segment.
+                    These scores are used to train a lightweight MLP reward model on trajectory derived features, mean speed,
+                    lateral deviation, steering jerk, yaw rate, and incident flags, which then replaces MetaDrive's built-in
+                    reward signal during PPO fine-tuning.
+                </p>
+                <div class="project-links">
+                    <a href="https://github.com/VenkateshRoshan/DriveAlign-RLHF-NavCar" target="_blank">Git Repo</a>
+                </div>
+            </div>
+
             <div class="project">
                 <h3>Enhanced Monocular Depth Estimation with Grasp Pose Prediction</h3>
                 <p>Successfully implemented a project in robotic vision and manipulation that combines advanced depth estimation with practical grasping capabilities. 
