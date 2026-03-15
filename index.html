@@ -3,465 +3,582 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Butchi Venkatesh Adari's Portfolio</title>
+    <title>Butchi Venkatesh Adari - ML Engineer · Robotics · BCI</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=JetBrains+Mono:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TNPE2HTTF9"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-TNPE2HTTF9');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-TNPE2HTTF9');
     </script>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="Butchi_Venkatesh_Adari_Resume.pdf">Resume</a></li>
-                <li><a href="#cv">CV</a></li>
-                <li><a href="https://github.com/VenkateshRoshan" target="_blank">GitHub</a></li>
-                <li><a href="/cdn-cgi/l/email-protection#b1d3c4c5d2d9d8c7d4dfdad0c5d4c2d99fd0f1d6dcd0d8dd9fd2dedc">Mail</a></li>
-                <li>
-                    <a href="https://www.linkedin.com/in/abven/" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-linkedin"></i> LinkedIn
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section id="home">
-            <h1>Butchi Venkatesh Adari</h1>
-            <p class="hero-tagline">ML Engineer/Researcher · Robotics Engineer · BCI Researcher</p>
-        </section>
+<!-- ══ NAV ══ -->
+<header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="Butchi_Venkatesh_Adari_Resume.pdf" target="_blank">Resume</a></li>
+            <li><a href="#venture">Current Projects</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    </nav>
+</header>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <div class="about-me-container">
-                <img src="ProfilePicture.jpg" alt="Profile Picture" class="profile-picture-inline">
-                <p class="about-me-text">
-                    I'm Butchi Venkatesh Adari, a passionate Robotics Engineer and Machine Learning Researcher driven by real-world impact. 
-                    With a Master's in Robotics Engineering from WPI and a Bachelor's in Computer Science, I've built a strong foundation 
-                    in AI, perception, and automation. My work focuses on intelligent systems from robotic grasping with monocular depth 
-                    to LLM-driven data pipelines. I enjoy transforming complex problems into elegant AI-powered solutions, combining vision, 
-                    language, and control to push boundaries in robotics and MLOps.
-                </p>
+<!-- ══════════════════════════════════════════════════════════
+     VIEWPORT SPLIT - Hero (Profile) + Info Panel
+══════════════════════════════════════════════════════════ -->
+<div class="viewport-split">
+
+    <!-- LEFT: Profile Hero Panel -->
+    <div class="hero-panel">
+        <canvas id="neural-bg"></canvas>
+        <div class="hero-content">
+
+            <!-- Profile Photo -->
+            <div class="hero-avatar-wrap">
+                <img src="ProfilePicture.jpg" alt="Butchi Venkatesh Adari" class="hero-avatar">
             </div>
-        </section>
 
-        <section id="venture">
-            <h2>Startup</h2>
-            <div class="project">
-                <h3>MedhAItron - Neuro Assistive Robotics Initiative</h3>
-                <div class="tech-stack">
-                    <span class="tech-phase">EEG</span>
-                    <span class="tech-connector">+</span>
-                    <span class="tech-phase">BCI</span>
-                    <span class="tech-connector">+</span>
-                    <span class="tech-phase">AI/ML</span>
-                    <span class="tech-connector">+</span>
-                    <span class="tech-phase">Exoskeletons</span>
-                </div>
-                <div class="company-button">
-                    <a href="mindcompany.html" class="learn-more-btn">Learn More About MedhAItron</a>
-                </div>
-                <p>
-                    <strong>MedhAItron</strong> is my startup-focused project to build an intelligent neuro-assistive
-                    system that translates <strong>brain activity (EEG)</strong> into real-time control of a
-                    <strong>robotic exoskeleton</strong>. The goal is to help people with severe motor impairments
-                    regain functional movement through a safe, adaptive, and responsive brain-computer interface.
-                </p>
-                <p>
-                    The platform combines high-resolution EEG acquisition, signal preprocessing, feature extraction,
-                    and deep-learning-based neural decoding to convert intent into motion commands. These commands
-                    are then executed through an AI-assisted planning and control pipeline to deliver smooth and
-                    stable exoskeleton movement aligned with the user's intended action.
-                </p>
-                <p>
-                    My long-term vision is to build a personalized closed-loop rehabilitation system that improves
-                    over time using biosignal feedback, sensor fusion, and adaptive learning. This creates a path
-                    toward more accessible neurorehabilitation technology that is intelligent, scalable, and usable
-                    beyond research labs.
-                </p>
-                <p>
-                    I am actively looking for collaborators, mentors, and early partners in
-                    <strong>neuroscience</strong>, <strong>biomedical engineering</strong>, <strong>robotics</strong>,
-                    and <strong>AI/ML</strong>.
-                    If this aligns with your work or interests, reach out at
-                    <a href="mailto:butchivenkatesh.a@gmail.com" style="color: var(--cyan); font-weight: 600; text-decoration: underline;">butchivenkatesh.a@gmail.com</a>.
-                </p>
+            <!-- Name - single line -->
+            <h1 id="hero-name">Butchi Venkatesh Adari</h1>
+
+            <!-- Rotating Role -->
+            <div class="hero-role-line">
+                <span id="rotating-role">ML Engineer</span><span class="role-cursor">_</span>
             </div>
-        </section>
 
-        <section id="experience">
-            <h2>Experience</h2>
-            <div class="timeline">
+            <!-- Bio -->
+            <p class="hero-bio">
+                I build machines that understand, decide, and act at the intersection of ML, robotics, and the human nervous system. 
+                A Founding Machine Learning Engineer at AlphevaAI.
+                Building MedhAItron to prove that AI can restore what injury takes away.
+            </p>
 
-                <div class="timeline-item">
-                    <div class="timeline-date">Aug 2025 - Present</div>
-                    <div class="timeline-content">
-                        <h3>Machine Learning Engineer</h3>
-                        <p class="experience-meta">Alpheva AI</p>
-                        <p>At Alpheva AI, I work on building a production-grade, multi-agent AI platform from the ground up. My work involves designing and deploying LLM-based systems using agentic architectures, RAG, and MCP-style orchestration, while making sure everything is scalable, reliable, and cost-efficient. I’ve handled end-to-end development from backend APIs and cloud infrastructure on AWS to model integration, monitoring, and live system optimization. A big part of my role is ensuring the system performs well under real user load, stays stable in production, and continuously improves using feedback and observability.</p>
-                        <img src="Images/alpheva_logo.png" alt="Alpheva Logo" class="experience-logo-timeline">
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-date">July 2025 - Aug 2025</div>
-                    <div class="timeline-content">
-                        <h3>Machine Learning Engineer Intern</h3>
-                        <p class="experience-meta">Sellwizr</p>
-                        <p>Developed Entity Resolution pipeline using transformers and graph based RAG systems.</p>
-                        <img src="Images/sellwizr_logo.png" alt="Sellwizr Logo" class="experience-logo-timeline">
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-date">Aug 2023 - May 2025</div>
-                    <div class="timeline-content">
-                        <h3>Graduate Researcher</h3>
-                        <p class="experience-meta">ELPIS Lab, Worcester Polytechnic Institute</p>
-                        <p>Conducted cutting-edge research on monocular depth estimation and grasp pose prediction using Apple's Depth Pro and ViT-based Grasp Transformers. Deployed a real-time system on ReactorX-200 for robotic grasping tasks.</p>
-                        <img src="Images/wpi_logo.png" alt="WPI Logo" class="experience-logo-timeline">
-                    </div>
-                </div>
-
-
-                <div class="timeline-item">
-                    <div class="timeline-date">Jul 2021 - Jun 2023</div>
-                    <div class="timeline-content">
-                        <h3>Machine Learning Engineer</h3>
-                        <p class="experience-meta">Tata Consultancy Services</p>
-                        <p>Built YOLOv5 + DeepSORT pipelines for people tracking and OCR-based entity extraction for enterprise clients. Delivered containerized AI pipelines with FastAPI and deployed on cloud infrastructure.</p>
-                        <img src="Images/TCS_logo.webp" alt="TCS Logo" class="experience-logo-timeline">
-                    </div>
-                </div>
-
-
+            <!-- Social Links - under photo -->
+            <div class="hero-social">
+                <a href="https://github.com/VenkateshRoshan" target="_blank" class="social-btn">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/abven/" target="_blank" rel="noopener noreferrer" class="social-btn">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="/cdn-cgi/l/email-protection#f4959095869dda96b49a9b86809c9195878091869ada919081" class="social-btn">
+                    <i class="fas fa-envelope"></i> Mail
+                </a>
             </div>
-        </section>
 
-        <section id="education">
-            <h2>Education</h2>
-            <div class="timeline education-timeline">
-
-                <div class="timeline-item">
-                    <div class="timeline-date">2023 - 2025</div>
-                    <div class="timeline-content">
-                        <h3>Worcester Polytechnic Institute (WPI)</h3>
-                        <p class="experience-meta">M.S. in Robotics Engineering</p>
-                        <p>Focused on robotic perception, control systems, and AI-driven automation. Worked on real-world grasping systems, LLM integration, and computer vision pipelines for robotic platforms.</p>
-                        <img src="Images/wpi_logo.png" alt="WPI Logo" class="edu-logo-timeline">
-                    </div>
+            <!-- Stats -->
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-num">4+</span>
+                    <span class="stat-label">YRS EXP</span>
                 </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-date">2017 - 2021</div>
-                    <div class="timeline-content">
-                        <h3>Anil Neerukonda Institute of Technology & Sciences (ANITS)</h3>
-                        <p class="experience-meta">B.Tech in Computer Science and Engineering</p>
-                        <p>Gained strong fundamentals in algorithms, software development, and systems engineering. Developed a passion for machine learning and intelligent systems.</p>
-                        <img src="Images/Anits_logo.jpg" alt="ANITS Logo" class="edu-logo-timeline">
-                    </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-num">8+</span>
+                    <span class="stat-label">PROJECTS</span>
                 </div>
-
-            </div>
-        </section>
-
-        <section id="projects">
-            <h2>My Projects</h2>
-            
-            <div class="project">
-                <h3>DriveAlign - Autonomous Driving with RLHF</h3>
-                <div class="tech-stack">
-                    <span class="tech-phase">PPO</span>
-                    <span class="tech-connector">+</span>
-                    <span class="tech-phase">RLHF</span>
-                    <span class="tech-connector">+</span>
-                    <span class="tech-phase">MetaDrive</span>
-                    <span class="tech-connector">+</span>
-                    <span class="tech-phase">PyTorch</span>
-                    <span class="tech-connector">+</span>
-                    <span class="tech-phase">CNN + MLP</span>
-                </div>
-                <p>
-                    Built a full <strong>Reinforcement Learning from Human Feedback (RLHF)</strong> pipeline for autonomous driving
-                    inside the <strong>MetaDrive</strong> simulation environment. Trained a multimodal PPO agent from scratch using
-                    a custom <strong>gated CNN + MLP architecture</strong>. The CNN branch processes live RGB camera frames while
-                    the MLP branch processes a stacked history of 4 ego-state vectors covering speed, steering angle, yaw rate,
-                    lateral offset, and boundary distances. A learned gate layer dynamically weights how much to trust vision
-                    versus scalar signals depending on the driving context.
-                </p>
-                <p>
-                    Implemented a complete 7-phase RLHF pipeline: base PPO agent, vision integration, segment recording,
-                    human feedback collection, reward model training, RLHF fine-tuning, and metrics visualization. Human
-                    preferences are collected by watching the agent drive in real time and scoring each segment.
-                    These scores are used to train a lightweight MLP reward model on trajectory derived features, mean speed,
-                    lateral deviation, steering jerk, yaw rate, and incident flags, which then replaces MetaDrive's built-in
-                    reward signal during PPO fine-tuning.
-                </p>
-                <div class="project-links">
-                    <a href="https://github.com/VenkateshRoshan/DriveAlign-RLHF-NavCar" target="_blank">Git Repo</a>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-num">2</span>
+                    <span class="stat-label">DEGREES</span>
                 </div>
             </div>
 
-            <div class="project">
-                <h3>Enhanced Monocular Depth Estimation with Grasp Pose Prediction</h3>
-                <p>Successfully implemented a project in robotic vision and manipulation that combines advanced depth estimation with practical grasping capabilities. 
-                Fine-tuned Apple's Depth-Pro model to achieve significant improvements in monocular depth estimation, particularly excelling in scenarios where traditional depth sensors fail. 
+            <div class="scroll-hint-row">
+                <div class="scroll-hint-line"></div>
+                <span class="scroll-hint-text">SCROLL FOR PROJECTS</span>
+                <div class="scroll-hint-line"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- RIGHT: Experience + Education -->
+    <div class="info-panel">
+
+        <!-- Card: Experience -->
+        <div class="panel-card exp-card">
+            <div class="card-header">// EXPERIENCE</div>
+            <div class="mini-timeline">
+                <div class="mini-item">
+                    <div class="mini-dot"></div>
+                    <div class="mini-info">
+                        <div class="mini-role">ML Engineer</div>
+                        <div class="mini-company">Alpheva AI</div>
+                        <div class="mini-date">Aug 2025 – Present</div>
+                    </div>
+                    <img src="Images/alpheva_logo.png" alt="Alpheva" class="mini-logo" onerror="this.style.display='none'">
+                </div>
+                <div class="mini-item">
+                    <div class="mini-dot"></div>
+                    <div class="mini-info">
+                        <div class="mini-role">Graduate Researcher</div>
+                        <div class="mini-company">ELPIS Lab · WPI</div>
+                        <div class="mini-date">Aug 2023 – May 2025</div>
+                    </div>
+                    <img src="Images/wpi_logo.png" alt="WPI" class="mini-logo" onerror="this.style.display='none'">
+                </div>
+                <div class="mini-item">
+                    <div class="mini-dot"></div>
+                    <div class="mini-info">
+                        <div class="mini-role">ML Engineer</div>
+                        <div class="mini-company">Tata Consultancy Services</div>
+                        <div class="mini-date">Jul 2021 – Jun 2023</div>
+                    </div>
+                    <img src="Images/TCS_logo.webp" alt="TCS" class="mini-logo" onerror="this.style.display='none'">
+                </div>
+            </div>
+        </div>
+
+        <!-- Card: Education -->
+        <div class="panel-card edu-card">
+            <div class="card-header">// EDUCATION</div>
+            <div class="mini-timeline edu-mini">
+                <div class="mini-item">
+                    <div class="mini-dot edu-dot"></div>
+                    <div class="mini-info">
+                        <div class="mini-role">M.S. Robotics Engineering</div>
+                        <div class="mini-company">Worcester Polytechnic Institute</div>
+                        <div class="mini-date">2023 – 2025</div>
+                    </div>
+                    <img src="Images/wpi_logo.png" alt="WPI" class="mini-logo" onerror="this.style.display='none'">
+                </div>
+                <div class="mini-item">
+                    <div class="mini-dot edu-dot"></div>
+                    <div class="mini-info">
+                        <div class="mini-role">B.Tech Computer Science</div>
+                        <div class="mini-company">ANITS, Visakhapatnam</div>
+                        <div class="mini-date">2017 – 2021</div>
+                    </div>
+                    <img src="Images/Anits_logo.jpg" alt="ANITS" class="mini-logo" onerror="this.style.display='none'">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<main>
+
+
+    <!-- ══════════════════════════════════════════════════════════
+         STARTUP SECTION
+    ══════════════════════════════════════════════════════════ -->
+    <section id="venture" class="reveal-section">
+        <h2>Current Projects</h2>
+        <div class="project">
+            <h3>MedhAItron - Neuro Assistive Robotics Initiative</h3>
+            <div class="tech-stack">
+                <span class="tech-phase">EEG</span>
+                <span class="tech-connector">+</span>
+                <span class="tech-phase">BCI</span>
+                <span class="tech-connector">+</span>
+                <span class="tech-phase">AI/ML</span>
+                <span class="tech-connector">+</span>
+                <span class="tech-phase">Exoskeletons</span>
+            </div>
+            <div class="company-button">
+                <a href="mindcompany.html" class="learn-more-btn">Learn More About MedhAItron</a>
+            </div>
+            <p>
+                <strong>MedhAItron</strong> is my startup-focused project to build an intelligent neuro-assistive
+                system that translates <strong>brain activity (EEG)</strong> into real-time control of a
+                <strong>robotic exoskeleton</strong>. The goal is to help people with severe motor impairments
+                regain functional movement through a safe, adaptive, and responsive brain-computer interface.
+            </p>
+            <p>
+                The platform combines high-resolution EEG acquisition, signal preprocessing, feature extraction,
+                and deep-learning-based neural decoding to convert intent into motion commands. These commands
+                are then executed through an AI-assisted planning and control pipeline to deliver smooth and
+                stable exoskeleton movement aligned with the user's intended action.
+            </p>
+            <p>
+                My long-term vision is to build a personalized closed-loop rehabilitation system that improves
+                over time using biosignal feedback, sensor fusion, and adaptive learning.
+            </p>
+            <p>
+                I am actively looking for collaborators, mentors, and early partners in
+                <strong>neuroscience</strong>, <strong>biomedical engineering</strong>, <strong>robotics</strong>,
+                and <strong>AI/ML</strong>.
+                If this aligns with your work or interests, reach out at
+                <a href="/cdn-cgi/l/email-protection#49282d283b20672b0927263b3d212c283a3d2c3b27672c2d3c" style="color: var(--cyan); font-weight: 600; text-decoration: underline;"><span class="__cf_email__" data-cfemail="2d4c494c5f44034f6d43425f5945484c5e59485f4303484958">[email&#160;protected]</span></a>.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>DriveAlign - Autonomous Driving with RLHF</h3>
+            <div class="tech-stack">
+                <span class="tech-phase">PPO</span>
+                <span class="tech-connector">+</span>
+                <span class="tech-phase">RLHF</span>
+                <span class="tech-connector">+</span>
+                <span class="tech-phase">MetaDrive</span>
+                <span class="tech-connector">+</span>
+                <span class="tech-phase">PyTorch</span>
+                <span class="tech-connector">+</span>
+                <span class="tech-phase">CNN + MLP</span>
+            </div>
+            <p>
+                Built a full <strong>Reinforcement Learning from Human Feedback (RLHF)</strong> pipeline for autonomous driving
+                inside the <strong>MetaDrive</strong> simulation environment. Trained a multimodal PPO agent from scratch using
+                a custom <strong>gated CNN + MLP architecture</strong>. The CNN branch processes live RGB camera frames while
+                the MLP branch processes a stacked history of 4 ego-state vectors covering speed, steering angle, yaw rate,
+                lateral offset, and boundary distances. A learned gate layer dynamically weights how much to trust vision
+                versus scalar signals depending on the driving context.
+            </p>
+            <p>
+                Implemented a complete 7-phase RLHF pipeline: base PPO agent, vision integration, segment recording,
+                human feedback collection, reward model training, RLHF fine-tuning, and metrics visualization. Human
+                preferences are collected by watching the agent drive in real time and scoring each segment.
+            </p>
+            <div class="project-links">
+                <a href="https://github.com/VenkateshRoshan/DriveAlign-RLHF-NavCar" target="_blank">Git Repo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════
+         PROJECTS SECTION
+    ══════════════════════════════════════════════════════════ -->
+    <section id="projects" class="reveal-section">
+        <h2>My Projects</h2>
+
+        <div class="project">
+            <h3>Enhanced Monocular Depth Estimation with Grasp Pose Prediction</h3>
+            <p>Successfully implemented a project in robotic vision and manipulation that combines advanced depth estimation with practical grasping capabilities.
+                Fine-tuned Apple's Depth-Pro model to achieve significant improvements in monocular depth estimation, particularly excelling in scenarios where traditional depth sensors fail.
                 When tested with the ReactorX-200 robotic arm at 30cm height, conventional depth sensors produced null values, while our enhanced monocular depth system maintained accuracy with just 1-2cm error margin.
-                Further optimized the model through quantization, achieving comparable performance with FP16 precision while maintaining minimal error rates (note: INT8 quantization showed increased error margins).
-                Developed and deployed an innovative Grasp Transformer model that leverages RGB images and monocular depth data to predict optimal grasp poses for robotic manipulation. 
-                The system has been successfully deployed on the ReactorX-200 (Trossen Robotics) platform, demonstrating robust performance in real-world grasping tasks.
-                    There is an attached video which shows the ReactorX-200 arm successfully grasping a ball from a distance of 15cm, showcasing the practical application of our depth estimation and grasp pose prediction system.</p>
-                </p>
-                
-                <div class="slideshow-container">
+                Developed and deployed an innovative Grasp Transformer model that leverages RGB images and monocular depth data to predict optimal grasp poses for robotic manipulation.
+            </p>
 
-                    <div class="slides fade">
-                        <div class="project-video-container">
-                            <video 
-                                class="project-video"
-                                controls
-                                preload="metadata"
-                                poster="video-thumbnail.jpg">
-                                <source src="Grasping/UR10-1.mp4" type="video/mp4">
-                                UR10 grasping a bottle under 15cm view.
-                            </video>
-                        </div>
-                        <div class="caption">UR10 grasping a bottle under 15cm view.</div>
+            <div class="slideshow-container">
+                <div class="slides fade">
+                    <div class="project-video-container">
+                        <video class="project-video" controls preload="metadata" poster="video-thumbnail.jpg">
+                            <source src="Grasping/UR10-1.mp4" type="video/mp4">
+                            UR10 grasping a bottle under 15cm view.
+                        </video>
                     </div>
-
-                    <div class="slides fade">
-                        <div class="project-video-container">
-                            <video 
-                                class="project-video"
-                                controls
-                                preload="metadata"
-                                poster="video-thumbnail.jpg">
-                                <source src="Grasping/UR10-2.mp4" type="video/mp4">
-                                UR10 grasping a banana under 15cm view.
-                            </video>
-                        </div>
-                        <div class="caption">UR10 grasping a banana under 15cm view.</div>
-                    </div>
-
-                    <div class="slides fade">
-                        <img src="Grasping/comparison.png" alt="Depth Estimation Comparison" width="1000" height="600">
-                        <div class="caption">Depth Estimation Comparison</div>
-                    </div>
-                    
-                    <div class="slides fade">
-                        <img src="Grasping/quantization_comparison.png" alt="Quantization Comparison" width="1000" height="600">
-                        <div class="caption">Quantization Comparison</div>
-                    </div>
-
-                    <div class="slides fade">
-                        <div class="project-video-container">
-                            <video 
-                                class="project-video"
-                                controls
-                                preload="metadata"
-                                poster="video-thumbnail.jpg">
-                                <source src="Grasping/Grasping-rx200.mp4" type="video/mp4">
-                                Reactor-X 200 grasping a ball under 15cm view.
-                            </video>
-                        </div>
-                        <div class="caption">Reactor-X 200 grasping a ball under 15cm view.</div>
-                    </div>
-            
-                    <!-- Navigation buttons -->
-                    <a class="prev" onclick="changeSlide(-1, this)">&#10094;</a>
-                    <a class="next" onclick="changeSlide(1, this)">&#10095;</a>
+                    <div class="caption">UR10 grasping a bottle under 15cm view.</div>
                 </div>
-                <!-- <div class="project-links">
-                    <a href="https://github.com/VenkateshRoshan/Research-Paper-RAG" target="_blank">Git Repo</a>
-                </div> -->
-
+                <div class="slides fade">
+                    <div class="project-video-container">
+                        <video class="project-video" controls preload="metadata" poster="video-thumbnail.jpg">
+                            <source src="Grasping/UR10-2.mp4" type="video/mp4">
+                            UR10 grasping a banana under 15cm view.
+                        </video>
+                    </div>
+                    <div class="caption">UR10 grasping a banana under 15cm view.</div>
+                </div>
+                <div class="slides fade">
+                    <img src="Grasping/comparison.png" alt="Depth Estimation Comparison" width="1000" height="600">
+                    <div class="caption">Depth Estimation Comparison</div>
+                </div>
+                <div class="slides fade">
+                    <img src="Grasping/quantization_comparison.png" alt="Quantization Comparison" width="1000" height="600">
+                    <div class="caption">Quantization Comparison</div>
+                </div>
+                <div class="slides fade">
+                    <div class="project-video-container">
+                        <video class="project-video" controls preload="metadata" poster="video-thumbnail.jpg">
+                            <source src="Grasping/Grasping-rx200.mp4" type="video/mp4">
+                            Reactor-X 200 grasping a ball under 15cm view.
+                        </video>
+                    </div>
+                    <div class="caption">Reactor-X 200 grasping a ball under 15cm view.</div>
+                </div>
+                <a class="prev" onclick="changeSlide(-1, this)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1, this)">&#10095;</a>
             </div>
-            <div class="project">
-                <h3>Rufus - Agentic Web Data Extractor for RAG Systems</h3>
-                
-                <p>🤖 Engineered a cutting-edge AI-powered web extraction system that revolutionizes how data is gathered and processed for RAG (Retrieval-Augmented Generation) applications. Rufus intelligently crawls websites based on natural language instructions, making complex data extraction as simple as writing a prompt.</p>
-                
-                <div class="project-details">
-                    <h4>Key Features</h4>
-                    <ul>
-                        <li><strong>AI-Driven Crawling:</strong> Implemented advanced crawling algorithms powered by LLMs (TinyLlama, with planned OpenAI integration) that understand and follow natural language instructions for targeted data extraction.</li>
-                        <li><strong>Smart Content Selection:</strong> Developed intelligent filtering mechanisms that identify and extract only the most relevant content, significantly reducing noise in the final dataset.</li>
-                        <li><strong>Dynamic Navigation:</strong> Built robust handling for complex web structures, including nested links and dynamically loaded content, ensuring comprehensive data collection.</li>
-                        <li><strong>Structured Output:</strong> Created sophisticated document synthesis pipelines that convert raw web content into clean, structured formats ready for RAG applications.</li>
-                    </ul>
-            
-                    <h4>Technical Implementation</h4>
-                    <ul>
-                        <li><strong>Core Architecture:</strong> Built with Python, utilizing FastAPI for REST endpoints and Gradio for an intuitive user interface. Containerized with Docker for consistent deployment across environments.</li>
-                        <li><strong>LLM Integration:</strong> Leveraged LangChain for orchestrating LLM operations, initially using Ollama-TinyLlama for development with seamless migration path to OpenAI for production.</li>
-                        <li><strong>Vector Storage:</strong> Implemented ChromaDB for efficient storage and retrieval of document embeddings, enabling fast and accurate content matching.</li>
-                        <li><strong>Modular Design:</strong> Created a highly maintainable codebase with clear separation of concerns across crawling, AI processing, and data synthesis components.</li>
-                    </ul>
-            
-                    <h4>Performance & Scalability</h4>
-                    <ul>
-                        <li><strong>Intelligent Rate Limiting:</strong> Implemented adaptive rate limiting and concurrent processing to maximize throughput while respecting website policies.</li>
-                        <li><strong>Error Resilience:</strong> Built comprehensive error handling and recovery mechanisms, ensuring reliable operation across diverse web environments.</li>
-                        <li><strong>Monitoring & Logging:</strong> Integrated detailed logging and monitoring capabilities for tracking system performance and debugging.</li>
-                    </ul>
-            
-                    <!-- <h4>Example Usage</h4>
-                    <pre><code>
-            from Rufus import RufusClient
-            
-            # Initialize client
-            client = RufusClient(api_key=YOUR_API_KEY)
-            
-            # Extract data with natural language instructions
-            documents = client.scrape(
-                url="https://example.com",
-                instructions="Find all product features and customer FAQ sections"
-            )
-            
-            # Documents are returned in structured format ready for RAG pipelines
-            print(documents)
-                    </code></pre> -->
-                </div>
-            
-                <img src="AIWebExtractor/output_project-4.png" alt="Rufus Project Architecture" class="project-image" width="1000" height="600">
-                
-                <div class="project-links">
-                    <a href="https://github.com/VenkateshRoshan/rufus-web-extractor" target="_blank">Git Repo</a>
-                </div>
+        </div>
+
+        <div class="project">
+            <h3>Rufus - Agentic Web Data Extractor for RAG Systems</h3>
+            <p>🤖 Engineered a cutting-edge AI-powered web extraction system that revolutionizes how data is gathered and processed for RAG (Retrieval-Augmented Generation) applications. Rufus intelligently crawls websites based on natural language instructions, making complex data extraction as simple as writing a prompt.</p>
+            <div class="project-details">
+                <h4>Key Features</h4>
+                <ul>
+                    <li><strong>AI-Driven Crawling:</strong> Advanced crawling algorithms powered by LLMs (TinyLlama, with planned OpenAI integration).</li>
+                    <li><strong>Smart Content Selection:</strong> Intelligent filtering mechanisms that identify and extract only the most relevant content.</li>
+                    <li><strong>Dynamic Navigation:</strong> Robust handling for complex web structures, including nested links and dynamically loaded content.</li>
+                    <li><strong>Structured Output:</strong> Sophisticated document synthesis pipelines that convert raw web content into clean, structured formats.</li>
+                </ul>
+                <h4>Technical Implementation</h4>
+                <ul>
+                    <li><strong>Core Architecture:</strong> Built with Python, FastAPI for REST endpoints and Gradio for UI. Containerized with Docker.</li>
+                    <li><strong>LLM Integration:</strong> Leveraged LangChain for orchestrating LLM operations.</li>
+                    <li><strong>Vector Storage:</strong> ChromaDB for efficient storage and retrieval of document embeddings.</li>
+                </ul>
             </div>
-            <div class="project">
-                <!-- Add project Title -->
-                <h3>Research-Paper-RAG</h3>
-                <p>Developed a production-ready Research Paper Analysis System leveraging Retrieval-Augmented Generation (RAG) architecture. The system efficiently processes academic papers from the arXiv dataset, utilizing FAISS for similarity search and Flan-T5 for text generation. 
-                    Built on Google Cloud Platform, it features a FastAPI backend deployed on Vertex AI, with a user-friendly Gradio interface for real-time querying. The system employs advanced embedding techniques to understand and retrieve relevant research papers, 
-                    generating context-aware responses to user queries. Implemented with a robust CI/CD pipeline using GitHub Actions, the system includes comprehensive monitoring, automated deployments, and scalable infrastructure. The architecture ensures efficient handling of 
-                    large-scale document processing while maintaining quick response times and high accuracy in research paper analysis.</p>
-                <div class="slideshow-container">
-                    <div class="slides fade">
-                        <img src="Research-Paper-RAG/outputRAGSystem.png" alt="RAG Results" width="1000" height="600">
-                        <div class="caption">Research Paper RAG System</div>
-                    </div>
-                    
-                    <div class="slides fade">
-                        <img src="Research-Paper-RAG/Architecture.png" alt="RAG System Architecture" width="1000" height="600">
-                        <div class="caption">System Architecture</div>
-                    </div>
-                    
-                    <div class="slides fade">
-                        <img src="Research-Paper-RAG/originalOutput_flanT5.png" alt="RAG Based Model Output" width="1000" height="600">
-                        <div class="caption">Based Model Result</div>
-                    </div>
-            
-                    <!-- Navigation buttons -->
-                    <a class="prev" onclick="changeSlide(-1, this)">&#10094;</a>
-                    <a class="next" onclick="changeSlide(1, this)">&#10095;</a>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/VenkateshRoshan/Research-Paper-RAG" target="_blank">Git Repo</a>
-                </div>
+            <img src="AIWebExtractor/output_project-4.png" alt="Rufus Project Architecture" class="project-image" width="1000" height="600">
+            <div class="project-links">
+                <a href="https://github.com/VenkateshRoshan/rufus-web-extractor" target="_blank">Git Repo</a>
             </div>
-            <div class="project">
-                <!-- Add project Title -->
-                <h3>Image Captioning with Vision Transformer and GPT 2</h3>
-                <p>This project is an image caption generator that uses a Vision Transformer (ViT) to extract visual features from images and a GPT-2 model to generate natural language descriptions. 
-                    The model is deployed on both AWS and Hugging Face, allowing users to upload images and receive descriptive captions in real-time.</p>
-                <img src="ImageCaptionining/output_project-1.png" alt="Project 2" class="project-image" width="1000" height="600">
-                <div class="project-links">
-                    <a href="https://github.com/VenkateshRoshan/Image-Captioning-with-Vision-Transformer-and-GPT-2" target="_blank">Git Repo</a>
-                    <a href="https://huggingface.co/spaces/abven/ImageCaptionGenerator" target="_blank">Hugging Face Site</a>
+        </div>
+
+        <div class="project">
+            <h3>Research-Paper-RAG</h3>
+            <p>Developed a production-ready Research Paper Analysis System leveraging Retrieval-Augmented Generation (RAG) architecture. The system efficiently processes academic papers from the arXiv dataset, utilizing FAISS for similarity search and Flan-T5 for text generation.
+                Built on Google Cloud Platform, it features a FastAPI backend deployed on Vertex AI, with a user-friendly Gradio interface for real-time querying. Implemented with a robust CI/CD pipeline using GitHub Actions.</p>
+            <div class="slideshow-container">
+                <div class="slides fade">
+                    <img src="Research-Paper-RAG/outputRAGSystem.png" alt="RAG Results" width="1000" height="600">
+                    <div class="caption">Research Paper RAG System</div>
                 </div>
+                <div class="slides fade">
+                    <img src="Research-Paper-RAG/Architecture.png" alt="RAG System Architecture" width="1000" height="600">
+                    <div class="caption">System Architecture</div>
+                </div>
+                <div class="slides fade">
+                    <img src="Research-Paper-RAG/originalOutput_flanT5.png" alt="RAG Based Model Output" width="1000" height="600">
+                    <div class="caption">Based Model Result</div>
+                </div>
+                <a class="prev" onclick="changeSlide(-1, this)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1, this)">&#10095;</a>
             </div>
-            <div class="project">
-                <h3>Real Time Customer Support Chatbot</h3>
-                <p>🤖 Developed and deployed an enterprise-level customer support chatbot leveraging LLM technology for automated, context-aware responses. Implemented comprehensive MLOps practices with 
-                    full monitoring and versioning capabilities. Containerized the solution with Docker, featuring an interactive Gradio UI for seamless model interaction and testing.</p>
-                <img src="CustomerChatbot/output_project-2.png" alt="Project 3" class="project-image" width="1000" height="600">
-                <div class="project-links">
-                    <a href="https://github.com/VenkateshRoshan/Real-Time-Customer-Support-Chatbot" target="_blank">Git Repo</a>
-                    <a href="https://huggingface.co/spaces/abven/Customer-Support-Chatbot" target="_blank">huggingface Site</a>
-                </div>
+            <div class="project-links">
+                <a href="https://github.com/VenkateshRoshan/Research-Paper-RAG" target="_blank">Git Repo</a>
             </div>
+        </div>
 
-            <div class="project">
-                <h3>Miniature Self Driving Car</h3>
-                <p>Implemented a high-performance object detection system on Raspberry Pi 4, achieving 98% accuracy in real-time identification of traffic signs, pedestrians, and obstacles. Demonstrated practical application through successful 
-                    integration with a miniature autonomous vehicle, enabling self-guided navigation in controlled environments.</p>
-            
-                <!-- Option 2: For Local Video File -->
-                <div class="project-video-container">
-                    <video 
-                        class="project-video"
-                        controls
-                        preload="metadata"
-                        poster="video-thumbnail.jpg">
-                        <source src="SelfDrivingCar/AVM_Output.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            
-                <div class="project-links">
-                    <a href="https://github.com/VenkateshRoshan/Autonomous-Vehicle-Model/tree/master" target="_blank">Git Repo</a>
-                </div>
+        <div class="project">
+            <h3>Image Captioning with Vision Transformer and GPT-2</h3>
+            <p>Image caption generator that uses a Vision Transformer (ViT) to extract visual features from images and a GPT-2 model to generate natural language descriptions.
+                The model is deployed on both AWS and Hugging Face, allowing users to upload images and receive descriptive captions in real-time.</p>
+            <img src="ImageCaptionining/output_project-1.png" alt="Image Captioning" class="project-image" width="1000" height="600">
+            <div class="project-links">
+                <a href="https://github.com/VenkateshRoshan/Image-Captioning-with-Vision-Transformer-and-GPT-2" target="_blank">Git Repo</a>
+                <a href="https://huggingface.co/spaces/abven/ImageCaptionGenerator" target="_blank">Hugging Face Site</a>
             </div>
-            <!-- Add more projects as needed -->
-        </section>
-    </main>
+        </div>
 
-    <footer>
-        <p>&copy; 2024 Butchi Venkatesh Adari</p>
-    </footer>
+        <div class="project">
+            <h3>Real Time Customer Support Chatbot</h3>
+            <p>🤖 Developed and deployed an enterprise-level customer support chatbot leveraging LLM technology for automated, context-aware responses. Implemented comprehensive MLOps practices with
+                full monitoring and versioning capabilities. Containerized the solution with Docker, featuring an interactive Gradio UI for seamless model interaction and testing.</p>
+            <img src="CustomerChatbot/output_project-2.png" alt="Customer Chatbot" class="project-image" width="1000" height="600">
+            <div class="project-links">
+                <a href="https://github.com/VenkateshRoshan/Real-Time-Customer-Support-Chatbot" target="_blank">Git Repo</a>
+                <a href="https://huggingface.co/spaces/abven/Customer-Support-Chatbot" target="_blank">Hugging Face Site</a>
+            </div>
+        </div>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-        // Function to initialize each slideshow
-        document.addEventListener('DOMContentLoaded', function () {
-            const slideshows = document.querySelectorAll('.slideshow-container');
+        <div class="project">
+            <h3>Miniature Self Driving Car</h3>
+            <p>Implemented a high-performance object detection system on Raspberry Pi 4, achieving 98% accuracy in real-time identification of traffic signs, pedestrians, and obstacles. Demonstrated practical application through successful
+                integration with a miniature autonomous vehicle, enabling self-guided navigation in controlled environments.</p>
+            <div class="project-video-container">
+                <video class="project-video" controls preload="metadata" poster="video-thumbnail.jpg">
+                    <source src="SelfDrivingCar/AVM_Output.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/VenkateshRoshan/Autonomous-Vehicle-Model/tree/master" target="_blank">Git Repo</a>
+            </div>
+        </div>
 
-            slideshows.forEach(function (slideshow) {
-                slideshow.setAttribute('data-slide-index', '1');
+    </section>
+</main>
 
-                const slides = slideshow.querySelectorAll('.slides');
-                slides.forEach((slide, idx) => {
-                    slide.style.display = idx === 0 ? 'block' : 'none';
-                });
-            });
+<footer>
+    <p>&copy; 2025 Butchi Venkatesh Adari &nbsp;·&nbsp; Built with ❤️ &amp; quantum particles</p>
+</footer>
 
-            // Start auto-play
-            setInterval(() => {
-                document.querySelectorAll('.slideshow-container').forEach((slideshow) => {
-                    const nextButton = slideshow.querySelector('.next');
-                    if (nextButton) {
-                        changeSlide(1, nextButton);
-                    }
-                });
-            }, 10000);
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script>
+/* ══════════════════════════════════════════════════════════
+   1. SLIDESHOW (original logic, preserved)
+══════════════════════════════════════════════════════════ */
+document.addEventListener('DOMContentLoaded', function () {
+    const slideshows = document.querySelectorAll('.slideshow-container');
+    slideshows.forEach(function (slideshow) {
+        slideshow.setAttribute('data-slide-index', '1');
+        const slides = slideshow.querySelectorAll('.slides');
+        slides.forEach((slide, idx) => { slide.style.display = idx === 0 ? 'block' : 'none'; });
+    });
+    setInterval(() => {
+        document.querySelectorAll('.slideshow-container').forEach((slideshow) => {
+            const nextButton = slideshow.querySelector('.next');
+            if (nextButton) changeSlide(1, nextButton);
         });
+    }, 10000);
+});
 
-        function changeSlide(n, buttonElement) {
-            const slideshowContainer = buttonElement.closest('.slideshow-container');
-            const slides = slideshowContainer.querySelectorAll('.slides');
-            let slideIndex = parseInt(slideshowContainer.getAttribute('data-slide-index')) || 1;
+function changeSlide(n, buttonElement) {
+    const slideshowContainer = buttonElement.closest('.slideshow-container');
+    const slides = slideshowContainer.querySelectorAll('.slides');
+    let slideIndex = parseInt(slideshowContainer.getAttribute('data-slide-index')) || 1;
+    slideIndex += n;
+    if (slideIndex > slides.length) slideIndex = 1;
+    if (slideIndex < 1) slideIndex = slides.length;
+    slides.forEach(s => s.style.display = 'none');
+    slides[slideIndex - 1].style.display = 'block';
+    slides[slideIndex - 1].classList.add('fade');
+    slideshowContainer.setAttribute('data-slide-index', slideIndex);
+}
 
-            slideIndex += n;
-            if (slideIndex > slides.length) slideIndex = 1;
-            if (slideIndex < 1) slideIndex = slides.length;
+/* ══════════════════════════════════════════════════════════
+   3. NEURAL BACKGROUND CANVAS
+══════════════════════════════════════════════════════════ */
+(function() {
+    const canvas = document.getElementById('neural-bg');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    let W, H, nodes = [], mouse = { x: -999, y: -999 };
+    const COUNT = 65, THRESHOLD = 130;
 
-            slideshowContainer.setAttribute('data-slide-index', slideIndex);
+    function resize() {
+        W = canvas.width = canvas.offsetWidth;
+        H = canvas.height = canvas.offsetHeight;
+    }
 
-            slides.forEach((slide, idx) => {
-                slide.style.display = idx === (slideIndex - 1) ? 'block' : 'none';
+    function initNodes() {
+        nodes = [];
+        for (let i = 0; i < COUNT; i++) {
+            nodes.push({
+                x: Math.random() * W,
+                y: Math.random() * H,
+                vx: (Math.random() - 0.5) * 0.45,
+                vy: (Math.random() - 0.5) * 0.45,
+                r: Math.random() * 2 + 0.8,
+                pulse: Math.random() * Math.PI * 2
             });
         }
-    </script>
+    }
+
+    canvas.addEventListener('mousemove', e => {
+        const r = canvas.getBoundingClientRect();
+        mouse.x = e.clientX - r.left;
+        mouse.y = e.clientY - r.top;
+    });
+    canvas.addEventListener('mouseleave', () => { mouse.x = -999; mouse.y = -999; });
+
+    function tick() {
+        ctx.clearRect(0, 0, W, H);
+
+        nodes.forEach(n => {
+            n.x += n.vx; n.y += n.vy; n.pulse += 0.018;
+            if (n.x < 0 || n.x > W) n.vx *= -1;
+            if (n.y < 0 || n.y > H) n.vy *= -1;
+            const dx = n.x - mouse.x, dy = n.y - mouse.y;
+            const d = Math.hypot(dx, dy);
+            if (d < 90) { n.x += (dx / d) * 1.2; n.y += (dy / d) * 1.2; }
+        });
+
+        // Connections
+        for (let i = 0; i < nodes.length; i++) {
+            for (let j = i + 1; j < nodes.length; j++) {
+                const d = Math.hypot(nodes[i].x - nodes[j].x, nodes[i].y - nodes[j].y);
+                if (d < THRESHOLD) {
+                    ctx.save();
+                    ctx.globalAlpha = (1 - d / THRESHOLD) * 0.18;
+                    ctx.strokeStyle = '#00f0ff';
+                    ctx.lineWidth = 0.6;
+                    ctx.beginPath();
+                    ctx.moveTo(nodes[i].x, nodes[i].y);
+                    ctx.lineTo(nodes[j].x, nodes[j].y);
+                    ctx.stroke();
+                    ctx.restore();
+                }
+            }
+        }
+
+        // Nodes
+        nodes.forEach(n => {
+            const g = Math.sin(n.pulse) * 0.5 + 0.5;
+            ctx.save();
+            ctx.globalAlpha = 0.20 + g * 0.22;
+            ctx.fillStyle = '#00f0ff';
+            ctx.shadowColor = '#00f0ff';
+            ctx.shadowBlur = 4 + g * 7;
+            ctx.beginPath();
+            ctx.arc(n.x, n.y, n.r * (1 + g * 0.25), 0, Math.PI * 2);
+            ctx.fill();
+            ctx.restore();
+        });
+
+        requestAnimationFrame(tick);
+    }
+
+    resize();
+    initNodes();
+    tick();
+    window.addEventListener('resize', () => { resize(); initNodes(); });
+})();
+
+/* ══════════════════════════════════════════════════════════
+   4. ROTATING ROLE TEXT
+══════════════════════════════════════════════════════════ */
+(function() {
+    const el = document.getElementById('rotating-role');
+    if (!el) return;
+    const roles = ['AI/ML Engineer', 'AI Robotics Engineer', 'BCI Researcher'];
+    let idx = 0;
+
+    function next() {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(-8px)';
+        setTimeout(() => {
+            idx = (idx + 1) % roles.length;
+            el.textContent = roles[idx];
+            el.style.opacity = '1';
+            el.style.transform = 'translateY(0)';
+        }, 350);
+    }
+    setInterval(next, 2600);
+})();
+
+/* ══════════════════════════════════════════════════════════
+   5. HERO NAME LETTER ANIMATION
+══════════════════════════════════════════════════════════ */
+(function() {
+    const el = document.getElementById('hero-name');
+    if (!el) return;
+    const text = el.innerHTML;
+    // Animate each word line with stagger
+    const lines = el.querySelectorAll ? [] : [];
+    el.style.opacity = '0';
+    setTimeout(() => {
+        el.style.transition = 'opacity 0.6s ease';
+        el.style.opacity = '1';
+    }, 200);
+})();
+
+/* ══════════════════════════════════════════════════════════
+   6. SCROLL REVEAL
+══════════════════════════════════════════════════════════ */
+(function() {
+    const sections = document.querySelectorAll('.reveal-section');
+    const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+            if (e.isIntersecting) {
+                e.target.classList.add('revealed');
+                io.unobserve(e.target);
+            }
+        });
+    }, { threshold: 0.08 });
+    sections.forEach(s => io.observe(s));
+
+    const projects = document.querySelectorAll('.project');
+    const io2 = new IntersectionObserver((entries) => {
+        entries.forEach((e, i) => {
+            if (e.isIntersecting) {
+                e.target.style.transitionDelay = (i * 0.07) + 's';
+                e.target.classList.add('revealed');
+                io2.unobserve(e.target);
+            }
+        });
+    }, { threshold: 0.07 });
+    projects.forEach(p => io2.observe(p));
+})();
+
+</script>
+
 </body>
 </html>
